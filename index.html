@@ -1,0 +1,979 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+ <link href="img/NiigataUicon.png" rel="shortcut icon" type="image/x-icon"> <!--Mini icon for the browser's tab-->
+ <title>新大歯学留学生SSVP</title> <!--Title of the browser tab-->
+ <!-- Required meta tags -->
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+ <!-- JavaScript CSS -->
+ <script src="http://api.html5media.info/1.1.8/html5media.min.js"></script> <!--Helped hide the links on hover?-->
+ <script type="text/javascript" src="js/boostrap.js"></script>
+ <script type="text/javascript" src="js/boostrap.min.js"></script>
+
+ <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <link rel="stylesheet" href="css/bootstrap.css"><!--Loded from local file (downloaded from boostrap webpage)-->
+
+ <link rel="stylesheet" href="css/SSVPwebpage.css"> <!--Customized CSS file created for my page's body. (made by me for this website) -->
+
+</head>
+
+<body>
+
+<nav-bar>
+  <div class="nav-container" id="Top">
+
+  <!-- Navigation Bar Starts (**Important!! place jQuery first, then Popper.js, then Bootstrap JS at the end of page, These scripts are nesseary for the dropdown-menu to work properly )-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+          <!-- Navbar Brand Start -->
+          <nav class="navbar">
+            <a class="navbar-brand" id="Navbar-brand" href="https://www.niigata-u.ac.jp/en/" target="_blank">
+              <p>歯の形態学</p> <!-- Navbar Brand image:  As always drama for nothing. remove u-logo... <img src="img/logo-english.svg" width="250" height="50" alt=""> -->
+            </a>
+          </nav>
+          <!-- Navbar Brand End -->
+  <!-- Navbar Toggle button Start -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  <!-- Navbar Toggle button Ends -->
+  <!-- Navbar Menu Start -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+            <!--ホーム page Nav tab Start-->
+            <li class="nav-item"> <!-- Here if insert the class="ACTIVE" indicates that the nav will higliht or show that we are in the selected page, in this case home. It should be the only "active" nav item for each correspondig page.-->
+              <a class="nav-link" href="index.html#Top">ホーム<span class="sr-only">(current)</span></a>
+            </li>
+            <!--ホーム page Nav tab -->
+
+            <!--Page1 Overview 科目概要 page Nav tab Start (with dropdown menu)-->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#Overview">科目概要</a><!-- Navbar Menu link jump to a specific part or section of a page (1st. div section needs an id, then in href place the name of the hmtl page and "#" with the idname of ths section, e.g.  href="index00-All.html#Greeting"-->
+            </li>
+            <!--Page1 Overview page Nav tab End (with dropdown menu)-->
+
+            <!--Page2 Instruments and materials 実習道具と材料 page Nav tab Start (with dropdown menu)-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html#Pre-arrival-Logistics" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                実習道具と材料
+              </a>
+              <!--実習道具と材料 Nav tab dropdown items Start-->
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="index.html#実習道具と材料">実習道具と材料</a>
+                <a class="dropdown-item" href="index.html#彫るための器具">彫るための器具</a>
+                <a class="dropdown-item" href="index.html#ワックス器具">ワックスを盛るための器具</a>
+                <a class="dropdown-item" href="index.html#ワックスの盛り方">ワックスの盛り方</a>
+                <a class="dropdown-item" href="index.html#仕上げ、研磨のための器具">仕上げと研磨の器具</a>
+              </div>
+              <!--実習道具と材料 Nav tab dropdown items Ends-->
+            </li>
+            <!--Page2 Instruments and materials 実習道具と材料 page Nav tab  End (with dropdown menu)-->
+
+            <!--Page3 歯形彫刻 page Nav tab Start (with dropdown menu)-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html#Pre-arrival" id="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 歯形彫刻
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="index.html#歯形彫刻の実際">彫刻の要点</a>
+                <a class="dropdown-item" href="index.html#製作方法の例">製作方法</a>
+                <a class="dropdown-item" href="index.html#確認チェックポイント">確認チェックポイント</a>
+              </div>
+            </li>
+            <!--Page3 歯形彫刻 page Nav tab End (with dropdown menu)-->
+
+            <!--Page4 歯形彫刻の例 page Nav tab Start (with dropdown menu)-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                歯形彫刻の例
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="index.html#歯形彫刻の例">上顎左側中切歯</a>
+                <a class="dropdown-item" href="index.html#上顎左側第１小臼歯">上顎左側第１小臼歯</a>
+                <a class="dropdown-item" href="index.html#上顎左側第１大臼歯">上顎左側第１大臼歯</a>
+              </div>
+            </li>
+            <!--Page4 歯形彫刻の例 page Nav tab Start (with dropdown menu)-->
+
+            <!--Page5 メディア page Nav tab Start (with dropdown menu)-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html#Pre-arrival-Logistics" id="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 メディア
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="index.html#">上顎左側中切歯</a>
+                <a class="dropdown-item" href="index.html#">上顎左側第１小臼歯</a>
+                <a class="dropdown-item" href="index.html#">上顎左側第１大臼歯</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="index.html#">咬合器装着</a>
+                <a class="dropdown-item" href="index.html#">ワックスアップ</a>
+              </div>
+            </li>
+            <!--Page5 メディア Nav tab End (with dropdown menu)-->
+
+            <!--Contact page Nav tab Start-->
+            <!--
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#Contact">Contact</a>
+            </li>
+            -->
+            <!--Contact page Nav tab End-->
+
+          </ul>
+
+          <!-- Navbar Menu for lenguage starts -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">日本語
+                <img src="img/Flag-Japan.jpg" width="30" height="20" alt="">
+              </a>
+            </li>
+          </ul>
+          <!-- Navbar Menu for lenguage Ends -->
+
+          <!--Code for button intead of nemu
+          <form class="form-inline my-2 my-lg-0">
+            <button class="btn btn-outline-success" id="Japanese-btn" type="submit">
+              Japanese</button>
+          </form>-->
+        </div>
+        <!-- Navbar Menu Ends -->
+        <br>
+      </nav>
+  <!--Navbar Bar Ends -->
+
+      <div class="container-fluid" id="spacer-Nav-Content"></div>
+  </div>
+</nav-bar>
+
+<!--#Content start-->
+
+<div class="main-container">
+
+<home>
+  <!--#carousel starts here-->
+  <carousel1>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="6000"> <!--To stop the carousel put false in data interval, to change speed put a number ex. 6000 wich is in miliseconds-->
+
+        <!--#Indicators of the nav -->
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+
+      <!--#Wrapper of the slides-->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="img/HomeSlider-Slide1-2.JPG" alt="First slide">
+              <div class="carousel-caption d-none d-md-block">  <!--?# To hide elements depending on screen size see: https://getbootstrap.com/docs/4.0/utilities/display/-->
+               <h5>新潟大学歯学部</h5>
+               <p></p>
+               </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/HomeSlider-Slide2.png" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/HomeSlider-Carved26.jpg" alt="Third slide">
+          </div>
+        </div>
+
+      <!--#Controls or next and prev buttons -->
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+  </carousel1>
+
+  <!--#jumbotron Starts -->
+
+    <div class="jumbotron">
+
+      <h1 class="display-4"><b>新潟大学・歯学部・歯の形態学・歯の形態と機能実習</b></h1>
+      <br>
+      <br>
+      <h3><b>科目概要</b></h3>
+      <br>
+      <br>
+      <p class="j-text">
+        哺乳動物にとって、歯とそれを支持する顎骨は生命を維持する上で必要不可欠である。我々はヒトを対象に治療行為を行う以上、歯の形態とその機能的意義(広義)を正しく理解し、機能を回復することに全力を尽くすべきである。
+        <br>
+        <br>
+        ユニット科目「歯の形態」では、臨床において機能回復を行うための基礎として、歯の形態的な進化や、 ヒトの歯の基本的な形態 (根管の形態を含む)を学び、 さらにはその機能的意義を理解することを目的とする (「歯の解剖学」)。
+        <br>
+        <br>
+        実習においては、ワックスを用いて特定の歯の形態を忠実に再現して、歯の形態を3次元的にイメージできるようにするとともに、歯列の歯冠に欠損を持つ特定の歯に対して、ワックスによる修復をすることで、咬合や隣接関係、豊隆など機能に関わる歯の形態に対す理解を深める。歯のエックス線所見や形態異常に関しても概要を行う（「歯の形態と機能」）。
+        <br>
+        <br>
+      </p>
+
+      <h3><b>科目のねらい</b></h3>
+      <br>
+      <br>
+      <p class="j-text">
+        歯科の臨床を円滑に行うために、顎骨や歯の形態的な進化過程を理解し、 ヒトの乳歯および永 久歯の形態的な特徴を立体的に理解する。さらに、歯の形態の機能的意義を理解する
+        <br>
+        <br>
+      </p>
+
+      <h3><b>使用テキスト</b></h3>
+      <br>
+      <p class="j-text">
+      - 平成30年度歯の解剖学の手引き :新潟大学大学院医歯学総合研究科硬組織形態学分野編
+      <br>
+      - 小児歯科学分野オリジナルプリント
+      </p>
+    </div>
+
+  <hr style="height:1px;border:none;color:#333;background-color:#333;" /> <!--hr is a horizontal line, the rest is CSS -->
+</home>
+
+<!--# Grid_Template_Areas -->
+<page1><!--Overview 科目概要 -->
+    <div class="Wrapper1">
+      <div class="grid1">
+
+        <div class="header" id="Overview"> <h1><b>科目概要</b></h1></div>
+
+        <div class="sidebar">
+  <!-- Navbar Toggle button Start-->
+          <button class="navbar-toggler navbar-light Marcelo-side-toggle-button" id="" type="button" data-toggle="collapse" data-target="#Page1" aria-controls="Marcelo-side-menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button><!-- the class="Marcelo-side-toggle-button" is for calling css display:none; in large screens-->
+          <!-- Navbar Toggle button Ends -->
+
+          <div class="collapse-nav collapse Marcelo-side-menu" id="Page1"> <!-- class="Marcelo-side-menu" is nesseary for css display in large screens, id="Page1" is for the button to called an specific menu (cannot be a class)-->
+            <div class="sidebarmenuitem"><a href="index.html#Overview">実習にあたっての心構え</a></div>
+            <hr>
+            <div class="sidebarmenuitem"><a href="index.html#Overview">目的</a></div>
+            <hr>
+            <div class="sidebarmenuitem"><a href="index.html#Overview">到達目標</a></div>
+            <hr>
+            <div class="sidebarmenuitem"><a href="index.html#Top">Top</a></div>
+          </div>
+        </div>
+
+        <div class="content">
+          <h2 id="Admissions"><b>実習にあたっての心構え</b></h2>
+          <br>
+          <p>本実習は諸君が歯学部に入学して以降初めて手を動かしてものを製作する実習である。自分が歯科医師になるという実感を持たれることと思うが、重い社会的責任への第1歩であることも事実である。以下の点に充分留意して、諸君が実りある実習を行うことを期待する。</p>
+          <br>
+          <!-- <p><a href="#">Timelines</a></p> -->
+          <ul>
+            <li>刃物、鋭利な器具による怪我ややけどには充分留意すること。もし、事故が起こった場合には速やかに教員に報告すること。</li>
+            <li>以下に掲げる実習の目的を常に念頭に置いておくこと</li>
+            <li>プロフェッショナルになるための訓練であることを強く認識すること。</li>
+            <li>自ら考える事を重要視するので、方法論に関する詳細な説明はしない。したがって、本実習の目的を十分理解し、それぞれのステップで何をすべきかを判断する事が必要である。</li>
+          </ul>
+          <br>
+          <br>
+
+          <h2><b>目的</b></h2>
+          <br>
+          <p>歯科の臨床を円滑に行うために、永久歯の形態的な特徴を立体的に理解する</p>
+          <br>
+          <br>
+
+          <h2><b>到達目標</b></h2>
+          <br>
+          <ul>
+            <li>機能に関係する歯の形態を理解し、説明できる。</li>
+            <li>特定の歯の３次元的な形態をイメージできる。</li>
+            <li>ワックスの基本的な扱い方を身につける。</li>
+            <li>イメージ通りの歯冠形態をワックスにより再現できる。</li>
+          </ul>
+          <br>
+          <br>
+        </div>
+      </div>
+    </div>
+</page1>
+
+<!--# Grid_Template_Areas -->
+<page2><!--Instruments and materials 実習道具と材料 -->
+  <div class="Wrapper1">
+    <div class="grid1">
+
+      <div class="header" id="実習道具と材料"> <h1><b>実習道具と材料</b></h1></div>
+
+      <!-- sidebarmenu Start-->
+      <div class="sidebar">
+        <!-- Navbar Toggle button Start-->
+        <button class="navbar-toggler navbar-light Marcelo-side-toggle-button" id="" type="button" data-toggle="collapse" data-target="#Page2" aria-controls="Marcelo-side-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button><!-- the class="Marcelo-side-toggle-button" is for calling css display:none; in large screens-->
+        <!-- Navbar Toggle button End -->
+
+        <!-- sidebarmenu list Start-->
+        <div class="collapse-nav collapse Marcelo-side-menu" id="Page2"> <!-- class="Marcelo-side-menu" is nesseary for css display in large screens, id="Page1" is for the button to called an specific menu (cannot be a class)-->
+          <div class="sidebarmenuitem"><a href="index.html#実習道具と材料">実習に使用する道具、材料と使用方法</a></div>
+          <hr>
+          <div class="sidebarmenuitem"><a href="index.html#彫るための器具">彫るための器具</a></div>
+          <hr>
+          <div class="sidebarmenuitem"><a href="index.html#ワックス器具">ワックスを盛るための器具</a></div>
+          <hr>
+          <div class="sidebarmenuitem"><a href="index.html#ワックスの盛り方">ワックスの盛り方</a></div>
+          <hr>
+          <div class="sidebarmenuitem"><a href="index.html#仕上げ、研磨のための器具">仕上げ、研磨のための器具</a></div>
+          <hr>
+          <div class="sidebarmenuitem"><a href="index.html#Top">Top</a></div>
+        </div>
+        <!-- sidebarmenu list End-->
+
+      </div>
+      <!-- sidebarmenu End-->
+
+      <!-- Content Start-->
+      <div class="content">
+        <div id="道具と材料"><h2><b>実習に使用する道具、材料と使用方法</b></h2>
+         <br>
+         <h4><b>技工布</b></h4>
+         <p>すべての作業を技工布の上で行い、ワックス屑などの後始末を各自できちんと行うこと。</p>
+         <br>
+         <h4><b>２倍大歯牙模型</b></h4>
+         <p>実習の参考模型である。この模型の形、寸法、特徴などをよく観察して、ワックスにて類似するものを再現する。ただし、彫刻のサイズを問わず、バランスがとれていることを重視する。一般的に報告されている形態と違いがあっても、臨床歯冠形態に個人差があることから、今回はこの模型の形態を優先する。</p>
+         <br>
+         <h4><b>技工用ノギスおよび定規</b></h4>
+         <p>２倍大歯牙模型の寸法を測定するためのものである。</p>
+         <br>
+         <!--Photo gallery Starts here taken from https://codepen.io/caraya/pen/NGoWKM?depth=everything&order=popularity&page=15&q=image+gallery+&show_forks=false-->
+         <div class="boxes">
+           <div class="box box1">
+             <img src="img/Picture01a-1000x684.jpg" alt="" />
+             <p>図1a.ノギスによる測定の例-凸状面の場合</p>
+           </div>
+           <div class="box box1">
+             <img src="img/Picture01b-1000x684.jpg" alt="" />
+             <p>図1b.ノギスによる測定の例-凹面の場合</p>
+           </div>
+         </div>
+         <!--Photo gallery Ends here -->
+         <br>
+         <h4><b>ワックス棒</b></h4>
+         <p>このワックス棒を用いて、彫ったり、ワックスを盛ったりして、２倍大歯牙模型に類似したものを製作する。</p>
+         <br>
+         <br>
+        </div>
+
+        <hr>
+
+        <div id="彫るための器具"><h2><b>彫るための器具</b></h2>
+         <br>
+         <h4><b>切り出しナイフ</b></h4>
+         <p>最初は切り出しナイフを用いて、大きくワックスをカットし、大雑把な歯形を作る。その際、切り出しナイフを自分の指、手や身体に向けず、切り出しナイフの動きを十分にコントロールできる姿勢（フィンガーレスト等）で慎重に行うこと（図２a, b）。</p>
+         <p>フィンガーレストとは作業中に右手（左利きの場合は左手）ないしは左手の指をワックス棒にしっかりと固定することを言います（図 2）。</p>
+         <p>なお、利き手は切り出しナイフを固定し、利き手でない親指で切り出しナイフを押すように操作すると良い。</p>
+         <br>
+
+         <!--Photo gallery Starts here taken from https://codepen.io/caraya/pen/NGoWKM?depth=everything&order=popularity&page=15&q=image+gallery+&show_forks=false-->
+         <div class="boxes">
+           <div class="box box1">
+             <img src="img/Picture02a-1000x684.jpg" alt="" />
+             <p>図2a.切り出しナイフを用いてワックス棒のカットを行った例</p>
+           </div>
+           <div class="box box1">
+             <img src="img/Picture02b-1000x684.jpg" alt="" />
+             <p>図2b.切り出しナイフを用いてワックス棒のカットを行った例</p>
+           </div>
+           <br>
+         </div>
+         <!--Photo gallery Ends here -->
+
+         <br>
+         <h4><b>彫刻刀(エバンス)</b></h4>
+         <p>切り出しナイフによるカットに引き継ぎ、彫刻刀（図３）にて細部を再現し、最終的な形態を仕上げる。</p>
+         <br>
+         <!--Photo gallery Starts here taken from https://codepen.io/caraya/pen/NGoWKM?depth=everything&order=popularity&page=15&q=image+gallery+&show_forks=false-->
+         <div class="boxes">
+           <div class="box box1">
+             <img src="img/Picture03-1000x104.jpg" alt="" />
+             <p>図3.彫刻刀(エバンス)</p>
+           </div>
+           <br>
+         </div>
+         <!--Photo gallery Ends here -->
+         <br>
+         <p>彫刻刀の持ち方は筆記道具と同様で、作業中に右手（左利きの場合は左手）の薬指でワックス棒にしっかりと固定する（フィンガーレスト）。彫刻刀を用いてワックス棒を彫る(図4a,b)。</p>
+         <br>
+         <!--Photo gallery Starts here taken from https://codepen.io/caraya/pen/NGoWKM?depth=everything&order=popularity&page=15&q=image+gallery+&show_forks=false-->
+         <div class="boxes">
+           <div class="box box1">
+             <img src="img/Picture04a-1000x684.jpg" alt="" />
+             <p>図4a.軸面を彫る例</p>
+           </div>
+           <div class="box box1">
+             <img src="img/Picture04b-1000x684.jpg" alt="" />
+             <p>図4b.咬合面を彫る例</p>
+           </div>
+           <br>
+         </div>
+         <!--Photo gallery Ends here -->
+         <br>
+         <h4><b>ワックスカーバー（ホ−レンバック）</b></h4>
+         <p>ホ−レンバック(図5)を細かいところ（溝、歯頚線など）の仕上げに使う</p>
+         <br>
+         <!--Photo gallery Starts here taken from https://codepen.io/caraya/pen/NGoWKM?depth=everything&order=popularity&page=15&q=image+gallery+&show_forks=false-->
+         <div class="boxes">
+           <div class="box box1">
+             <img src="img/Picture05-1000x104.jpg" alt="" />
+             <p>図5.ワックスカーバー（ホ−レンバック）</p>
+           </div>
+           <br>
+         </div>
+         <!--Photo gallery Ends here -->
+         <br>
+         <p><b>注意：</b>上述の３つの器具は削るためのものであり、ワックスを溶かして盛るための道具ではない。（誤って焼いてしまうと削れなくなる可能性が高い）</p>
+         <br>
+        </div>
+
+        <hr>
+
+        <div id="ワックス器具"><h2><b>ワックスを盛るための器具</b></h2>
+          <br>
+          <h4><b>ワックス形成器（キャポン）</b></h4>
+          <p>キャポンのワックス形成器（図6）を用いて、少量のワックスを盛り、溶かしたワックスの形をある程度整える。</p>
+          <br>
+          <!--Photo gallery Starts here taken from https://codepen.io/caraya/pen/NGoWKM?depth=everything&order=popularity&page=15&q=image+gallery+&show_forks=false-->
+          <div class="boxes">
+            <div class="box box1">
+              <img src="img/Picture06-1000x104.jpg" alt="" />
+              <p>図6.ワックス形成器（キャポン）</p>
+            </div>
+            <br>
+          </div>
+          <!--Photo gallery Ends here -->
+          <br>
+          <h4><b>ワックススパチュラ</b></h4>
+          <p>ワックススパチュラ（図7, 8）はワックスを多めに盛るときに用いる。「歯形彫刻実習」ではワックススパチュラ（＃2）（図８）を使用し、「歯の形態と機能実習」では盛る量に合わせて使い分ける。</p>
+          <br>
+          <!--Photo gallery Starts here taken from https://codepen.io/caraya/pen/NGoWKM?depth=everything&order=popularity&page=15&q=image+gallery+&show_forks=false-->
+          <div class="boxes">
+            <div class="box box1">
+              <img src="img/Picture07-1000x104.jpg" alt="" />
+              <p>図7.ワックススパチュラ（＃31）</p>
+            </div>
+            <br>
+          </div>
+          <!--Photo gallery Ends here -->
+          <br>
+          <!--Photo gallery Starts here taken from https://codepen.io/caraya/pen/NGoWKM?depth=everything&order=popularity&page=15&q=image+gallery+&show_forks=false-->
+          <div class="boxes">
+            <div class="box box1">
+              <img src="img/Picture08-1000x104.jpg" alt="" />
+              <p>図8.ワックススパチュラ（＃2）</p>
+            </div>
+            <br>
+          </div>
+          <!--Photo gallery Ends here -->
+          <br>
+          <h4><b>アルコールランプおよびアルコールランプ用アルコール</b></h4>
+          <p>アルコールランプにアルコールを入れ、芯に火をつけ、ワックスを溶かして盛る。</p>
+          <br>
+        </div>
+
+        <hr>
+
+        <div id="ワックスの盛り方"><h2><b>ワックスの盛り方</b></h2>
+         <br>
+         <p>キャポンのワックス形成器またはワックススパチュラをアルコールランプの火に当てて、熱くなったら盛りたいワックスに当てて、溶かしたワックスを器具の先に乗せて、ワックス棒に盛る。</p>
+         <br>
+         <p>ワックスが固まったら、エバンスなどで盛った跡は残らないように形を整えます。</p>
+         <br>
+         <h5><b>注意：</b></h5>
+         <p>火または溶かしたワックスによる指、手、髪の毛、服などの火傷に十分気をつけること。ワックスを盛る必要がないときは、アルコールランプを消すこと。</p>
+        </div>
+
+        <hr>
+
+        <div id="仕上げ、研磨のための器具"><h2><b>仕上げ、研磨のための器具</b></h2>
+         <br>
+         <ul>
+           <li>豚毛ブラシ</li>
+           <li>ガーゼ</li>
+           <li>ストッキング</li>
+         </ul>
+         <p>作業中に削ったワックス屑を豚毛ブラシにて撤去し、歯形が再現されたら、ガーゼ、ストッキング等で仕上げ研磨を行う。</p>
+         <br>
+         <h4><b>Sub Title</b></h4>
+         <p></p>
+         <br>
+        </div>
+
+        <hr>
+
+      </div>
+      <!-- Content End-->
+
+    </div>
+  </div>
+</page2>
+
+<page3><!--Actual carving 歯形彫刻の実際-->
+  <div class="Wrapper1">
+    <div class="grid1">
+      <div class="header" id="歯形彫刻の実際"> <h1>歯形彫刻の実際</h1></div>
+
+      <div class="sidebar">
+
+        <!-- Navbar Toggle button Start  from: https://getbootstrap.com/docs/4.0/components/navbar/-->
+          <button class="navbar-toggler navbar-light Marcelo-side-toggle-button" id="" type="button" data-toggle="collapse" data-target="#Page3" aria-controls="Marcelo-side-menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button><!-- the class="Marcelo-side-toggle-button" is for calling css display:none; in large screens-->
+        <!-- Navbar Toggle button Ends -->
+
+        <div class="collapse-nav collapse Marcelo-side-menu" id="Page3"> <!-- class="Marcelo-side-menu" is nesseary for css display in large screens, id="Page1" is for the button to called an specific menu (cannot be a class)-->
+          <div class="sidebarmenuitem"><a href="index.html#歯形彫刻の実際">彫刻の要点</a></div>
+          <hr>
+          <div class="sidebarmenuitem"><a href="index.html#製作方法の例">製作方法の例</a></div>
+          <hr>
+          <div class="sidebarmenuitem"><a href="index.html#確認チェックポイント">確認するチェックポイントの一覧</a></div>
+          <hr>
+          <div class="sidebarmenuitem"><a href="index.html#Top">Top</a></div>
+        </div>
+      </div>
+
+      <div class="content">
+       <div id="彫刻の要点"><h2><b>彫刻の要点</b></h2>
+         <br>
+         <ul>
+           <li>彫刻する歯（歯冠と4〜5mm程度の歯根）の特徴をとらえる。</li>
+           <li>「全体の概形 →　細部の仕上げ」この流れをくずさないことが重要である。</li>
+           <li>バランスが取れた歯を製作する。</li>
+           <li>一度作製したものに必要以上に固執しないこと。</li>
+           <li>仕上げ研磨を十分に行う。</li>
+         </ul>
+         <br>
+         <p>以上の点を満たした製作品であれば、製作方法など問わない。以下に記載されている内容は参考までに述べる。</p>
+        </div>
+       <hr>
+       <div id="製作方法の例"><h2><b>製作方法の例</b></h2>
+         <br>
+         <h4><b>削る順番について</b></h4>
+         <br>
+         <ol>
+           <li>はじめに彫刻する歯の各面を三つの方向から観察を行い、歯の立体的なイメージを確認する。歯の寸法、高さと幅のバランスなどを把握するために、技工用ノギスおよび定規を用いて模型の歯冠を測定する。</li>
+           <li>ワックス棒の削る必要はない部分に、頬側面（buccal）、舌側面（lingual）、近心面（mesial）、遠心面（distal)を決定し、それぞれにB, L, M, Dという記号をつける。この4つの面は軸面と呼ばれる。</li>
+           <li>測定した寸法に合わせてワックス棒に彫刻刀等尖がっている器具で線を引いてから、切り出しナイフでその線に沿っていらない部分を削り出す。歯冠の下に4-5mm程度の歯根を想定した線を引く。</li>
+           <li>切り出しナイフでのカットにて特に軸面を製作する上で大量のワックスを削る必要があるところを落とし、歯冠および歯根部のおよその形を製作していく。</li>
+           <li>切り出しナイフでのカット終了後、各面の大きさを確認する。そのために、仮に歯頚線を入れ、各軸面から見た歯冠長と歯冠の幅を確認し、彫刻中に必要に応じて歯頚線の位置を直す。臼歯の場合、彫刻の全体のサイズを決めたら、咬合面のサイズを決める。その際、咬合面から見た近遠心的な幅と頬舌側的な幅のバランスを確認する。</li>
+           <li>各軸面の最大豊隆部の位置および咬頭頂と咬合面等の裂溝の位置を決める。</li>
+           <li>その後の彫刻を主にエバンスにて行うが細かいところに限ってホ−レンバックを用いても構わない。</li>
+           <li>製作順は原則として、軸面をある程度再現してから咬合面の製作に入る。</li>
+           <li>咬合面の製作順は以下の通りである。咬合面等の裂溝の位置を決めたら、咬頭頂および中心咬合面隆線の位置を決め、各咬頭を製作する。</li>
+           <li>歯形ができたら、エバンスまたはホ−レンバックにて各面を滑らかにしてから、研磨を行なう。その際、咬頭頂、隅角などを必要以上に丸めないように注意すること。</li>
+         </ol>
+        </div>
+       <hr>
+       <div id="確認チェックポイント"><h2><b>彫刻中および最終的に確認するチェックポイントの一覧（評価対象）</b></h2>
+         <br>
+         <h4><b>寸法について</b></h4>
+         <ul>
+           <li>歯冠長の比（頬側＞舌側＞近心＞遠心）</li>
+           <li>歯冠長と咬合面の大きさのバランス</li>
+           <li>歯が小さくなっても、全体のバランスを重視する</li>
+         </ul>
+         <br>
+         <h4><b>形態について</b></h4>
+         <ul>
+           <li>各軸面、咬合面の外形</li>
+           <li>各軸面の最大豊隆部の位置</li>
+           <li>咬頭の位置および大きさ</li>
+           <li>辺縁隆線および咬頭隆線の存在</li>
+           <li>裂溝の深さ</li>
+           <li>主溝の位置および走行</li>
+           <li>歯頚線の位置および走行</li>
+         </ul>
+         <br>
+         <!--PDF embed from assets Start-->
+           <!--<embed src="assets/TokyoStation-Joetsu Train to Niigata.pdf#toolbar=0&navpanes=0" type="application/pdf" width="100%" height="700px" style=" display: block; margin-left: auto; margin-right: auto;" />-->
+         <!--PDF embed from assets End-->
+
+         <!--Map Starts Copy & Pasted from google maps
+         <div class="videoWrapper">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d414680.9564174859!2d139.79461870244367!3d35.70912313667028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2sTokyo+Station%2C+1+Chome+Marunouchi%2C+Chiyoda%2C+Tokyo!3m2!1d35.6811673!2d139.7670516!4m5!1s0x5ff4c99ae88a6b01%3A0x3b1d928b98b9a3ea!2sNiigata+Station%2C+1+Chome+Hanazono%2C+Chuo%2C+Niigata%2C+Niigata+Prefecture!3m2!1d37.9120208!2d139.0618713!5e0!3m2!1sen!2sjp!4v1520355349682" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+         </div>
+         <!-Map Ends Copy & Pasted from google maps -->
+         <!--Section block Template for future refereses Starts here -->
+         <div id=""><h2></h2></div>
+         <br>
+         <p></p>
+         <br>
+         <!--Section block Template for future refereses Ends here -->
+        </div>
+      </div>
+    </div>
+  </div>
+</page3>
+
+<page4><!--歯形彫刻の例 -->
+  <div class="Wrapper1">
+    <div class="grid1">
+      <div class="header" id="歯形彫刻の例"> <h1>歯形彫刻の例</h1></div>
+
+      <!--Side bar4 start -->
+      <div class="sidebar">
+        <!-- Navbar Toggle button Start  from: https://getbootstrap.com/docs/4.0/components/navbar/-->
+          <button class="navbar-toggler navbar-light Marcelo-side-toggle-button" id="" type="button" data-toggle="collapse" data-target="#Page4" aria-controls="Marcelo-side-menu" aria-expanded="false" aria-label="Toggle navigation"> <!-- Navbar Toggle button "data-target" has to be the same name as side menu down to call and load. -->
+          <span class="navbar-toggler-icon"></span>
+          </button><!-- the class="Marcelo-side-toggle-button" is for calling css display:none; in large screens-->
+        <!-- Navbar Toggle button Ends -->
+
+        <div class="collapse-nav collapse Marcelo-side-menu" id="Page4"> <!-- class="Marcelo-side-menu" is nesseary for css display in large screens, id="Page1" is for the button to called an specific menu (cannot be a class)-->
+
+          <div class="sidebarmenuitem"><a href="index.html#歯形彫刻の例">上顎左側中切歯</a></div>
+          <hr>
+          <div class="sidebarmenuitem"><a href="index.html#上顎左側第１小臼歯">上顎左側第１小臼歯</a></div>
+          <hr>
+          <div class="sidebarmenuitem"><a href="index.html#上顎左側第１大臼歯">上顎左側第１大臼歯</a></div>
+          <hr>
+          <div class="sidebarmenuitem"><a href="index.html#Schedule">Schedule</a></div>
+          <hr>
+          <div class="sidebarmenuitem"><a href="index.html#Top">Top</a></div>
+        </div>
+       </div>
+       <!-- Navbar Toggle button End  from: https://getbootstrap.com/docs/4.0/components/navbar/-->
+       <!--Side bar4 End -->
+
+      <div class="content">
+        <div id="上顎左側中切歯"><h1><b>上顎左側中切歯</b></h1>
+          <br>
+          <ul>
+            <li>切り出しナイフによりおよそのカット</li>
+            <br>
+
+            <!--Photo gallery Starts here taken from https://codepen.io/caraya/pen/NGoWKM?depth=everything&order=popularity&page=15&q=image+gallery+&show_forks=false-->
+            <div class="boxes">
+              <div class="box box1">
+                <img src="img/Picture09-1000x684.jpg" alt="" />
+                <p>図9.唇側面および近心面の最初のカット</p>
+              </div>
+              <div class="box box1">
+                <img src="img/Picture10-1000x684.jpg" alt="" />
+                <p>図10.唇側面および近心面のカット（歯冠および歯根部）</p>
+              </div>
+              <div class="box box1">
+                <img src="img/Picture11-1000x684.jpg" alt="" />
+                <p>図11.舌側面および近心面のカット（歯冠および歯根）</p>
+              </div>
+              <div class="box box1">
+                <img src="img/Picture12-1000x684.jpg" alt="" />
+                <p>図12.切り出しナイフによりカットの終了（切縁からの所見）</p>
+              </div>
+            </div>
+            <!--Photo gallery Ends here -->
+
+            <br>
+            <li>その後の彫刻を主にエバンスにて行うが細かいところに限って（例：舌側面）ホ−レンバックを用いても構わない。</li>
+            <li>「製作法の例」に述べた項目のうち切歯にも当てはまるものおよび以下の点に関して注意すること。</li>
+            <br>
+             <ol>
+               <li>唇側面の各隆線および唇側面溝の深さ、舌側面の辺縁隆線と歯頚隆線の形態、あるいは切縁結節等の形態を把握するために、２倍大歯牙模型および製作中のワックス棒をあらゆる方向から観察すること。（切縁方向からも必ず観察すること。）その際、切歯の概形は切縁方向および口蓋側方向に向かうくさび形であることを意識すること。</li>
+               <li>隣接面同士の形態および遠心隅角と近心隅角の形態の違いを十分意識すること。</li>
+               <li>歯根の凹凸も再現すること</li>
+             </ol>
+            <br>
+            <li>エバンスでの彫刻例</li>
+            <br>
+
+            <!--Photo gallery Starts here taken from https://codepen.io/caraya/pen/NGoWKM?depth=everything&order=popularity&page=15&q=image+gallery+&show_forks=false-->
+            <div class="boxes">
+              <div class="box box1">
+                <img src="img/Picture13-1000x684.jpg" alt="" />
+                <p>図9.唇側面および近心面の最初のカット</p>
+              </div>
+              <div class="box box1">
+                <img src="img/Picture14-1000x684.jpg" alt="" />
+                <p>図10.唇側面および近心面のカット（歯冠および歯根部）</p>
+              </div>
+            </div>
+            <!--Photo gallery Ends here -->
+
+            <br>
+          </ul>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div id="上顎左側第１小臼歯"><h1><b>上顎左側第１小臼歯</b></h1>
+          <br>
+          <ul>
+            <li>切り出しナイフによりおよそのカット</li>
+            <br>
+
+            <!--Photo gallery Starts here taken from https://codepen.io/caraya/pen/NGoWKM?depth=everything&order=popularity&page=15&q=image+gallery+&show_forks=false-->
+            <div class="boxes">
+              <div class="box box1">
+                <img src="img/Picture15-1000x684.jpg" alt="" />
+                <p>図15.隅角のカット(咬合面の視点から)</p>
+              </div>
+              <div class="box box1">
+                <img src="img/Picture16-1000x684.jpg" alt="" />
+                <p>図16.隅角のカット(頬側・近心の視点から)</p>
+              </div>
+              <div class="box box1">
+                <img src="img/Picture17-1000x684.jpg" alt="" />
+                <p>図17.咬合面と頬舌側面の上部のカット</p>
+              </div>
+              <div class="box box1">
+                <img src="img/Picture18-1000x684.jpg" alt="" />
+                <p>図18.咬合面と頬舌側面の上部のカット（近心の視点から）</p>
+              </div>
+              <div class="box box1">
+                <img src="img/Picture19-1000x684.jpg" alt="" />
+                <p>図19. 頬側面から見た隣接面のカット</p>
+              </div>
+            </div>
+            <!--Photo gallery Ends here -->
+
+            <br>
+            <li>エバンス等での彫刻は「製作法の例」に述べた通りである。</li>
+            <li>第１小臼歯の特徴および第２小臼歯との違いを十分意識して彫刻すること。</li>
+            <li>完成例（最低限の条件を満たした例)</li>
+            <br>
+
+            <!--Photo gallery Starts here taken from https://codepen.io/caraya/pen/NGoWKM?depth=everything&order=popularity&page=15&q=image+gallery+&show_forks=false-->
+            <div class="boxes">
+              <div class="box box1">
+                <img src="img/Picture20-1000x684.jpg" alt="" />
+                <p>図20.頬側咬頭がマークされている</p>
+              </div>
+              <div class="box box1">
+                <img src="img/Picture21-1000x684.jpg" alt="" />
+                <p>図21頬側咬頭および近心面の最大豊隆部がマークされている</p>
+              </div>
+              <div class="box box1">
+                <img src="img/Picture22-1000x684.jpg" alt="" />
+                <p>図22頬側面の最大豊隆部がマークされている。</p>
+              </div>
+            </div>
+            <!--Photo gallery Ends here -->
+
+            <br>
+          </ul>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div id="上顎左側第１大臼歯"><h1>上顎左側第１大臼歯</h1>
+          <ul>
+            <li>切り出しナイフによるおよそのカット</li>
+            <br>
+            <!--Photo gallery Starts here taken from https://codepen.io/caraya/pen/NGoWKM?depth=everything&order=popularity&page=15&q=image+gallery+&show_forks=false-->
+            <div class="boxes">
+              <div class="box box1">
+                <img src="img/Picture23-1000x974.jpg" alt="" />
+                <p>図23.隅角のカット</p>
+              </div>
+              <div class="box box1">
+                <img src="img/Picture24-1000x974.jpg" alt="" />
+                <p>図24.頬側面の上部のカット</p>
+              </div>
+              <div class="box box1">
+                <img src="img/Picture25-1000x974.jpg" alt="" />
+                <p>図25.頬側面から見た隣接面のカット</p>
+              </div>
+              <div class="box box1">
+                <img src="img/Picture26-1000x974.jpg" alt="" />
+                <p>図26.舌側面から見た隣接面のカット</p>
+              </div>
+              <div class="box box1">
+                <img src="img/Picture27-1000x974.jpg" alt="" />
+                <p>図27.　近心面および咬合面の主溝のカット</p>
+              </div>
+              <div class="box box1">
+                <img src="img/Picture28-1000x974.jpg" alt="" />
+                <p>図28．およそのカット終了</p>
+              </div>
+            </div>
+            <!--Photo gallery Ends here -->
+            <br>
+            <li>完成例（最低限の条件を満たした例）</li>
+            <br>
+            <!--Photo gallery Starts here taken from https://codepen.io/caraya/pen/NGoWKM?depth=everything&order=popularity&page=15&q=image+gallery+&show_forks=false-->
+            <div class="boxes">
+              <div class="box box1">
+                <img src="img/Picture29-1000x974.jpg" alt="" />
+                <p>図29.頬側面および遠心面の最大豊隆部がマークされている。</p>
+              </div>
+            </div>
+            <!--Photo gallery Ends here -->
+            <br>
+          </ul>
+        </div>
+        <hr>
+        <br>
+        <div id="Schedule"><h2>Hello world and you!</h2>
+           <br>
+           <p>Activities schedule will be organized depending on the availability of each department professors, therefore changes and adjustment might occur during your stay. In those cases, students will be informed in advance or by mail/line.</p>
+           <p>In this section you can access the programed schedule for your stay. </p>
+           <br>
+         <!--HTML table Start https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_intro-->
+           <table>
+              <tr>
+                <th>Period</th> <!--table header -->
+                <th>Country</th>
+                <th>University</th>
+                <th>Schedule</th>
+              </tr>
+              <tr>
+                <td>2018/03/3rd ~ 11th</td>
+                <td>Thailand</td>
+                <td>Thammasat University</td> <!--Link to the photogallery-->
+                <td><a href="javascript:void(0)" onclick="window.location.href='assets/Schedules/index.html';" target="_blank">Available</a></td> <!--Save schedule xls file to web.htm and save in assets-->
+              </tr>
+              <tr>
+                <td>2018/03/11th~20th</td>
+                <td>Canada</td>
+                <td><a href="" target="_blank">University of British Columbia</a></td> <!--Link to the photogallery-->
+                <td><a href="javascript:void(0)" onclick="location.href='assets/Schedules/schedule2.html'" target="_blank"> available </a>No</td> <!--Save schedule xls file to web.htm and save in assets-->
+              </tr>
+              <tr>
+                <td>2018/03/14th ~ 24th</td>
+                <td>Indonesia</td>
+                <td><a href="https://en.wikipedia.org/wiki/Airlangga_University" target="_blank">Airlangga University</a></td>
+                <td><a href="#">available </a>No</td>
+              </tr>
+              <tr>
+                <td>2018/03/19th ~ 30th</td>
+                <td>Thailand</td>
+                <td>Prince of Songkla University</td>
+                <td><a href="javascript:void(0)" onclick="location.href='movies/CrBr_remove-ts/index.m3u8'" target="_blank"> available </a>No</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+         <!--HTML table Ends https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_intro-->
+        </div>
+        <br>
+        <hr>
+        <br>
+        <!--Section block Template for future refereses Starts here -->
+        <div id=""><h2></h2></div>
+        <br>
+        <p></p>
+        <br>
+        <!--How to hide a link url in html// Not working in github!!!
+        <a href="http://www.google.com">Normal Link</a>
+        <a href="javascript:void(0)" onclick="location.href='http://www.google.com'">hidden Link</a>
+        How to hide a link url in html -->
+        <!--Section block Template for future refereses Ends here -->
+        <hr>
+      </div>
+    </div>
+  </div>
+</page4>
+
+<page-05><!--Places and activities -->
+  <div class="Wrapper1">
+    <div class="grid1">
+      <div class="header" id="Places and activities"> <h1>Places and activities</h1></div>
+
+      <div class="sidebar">
+
+        <!-- Navbar Toggle button Start  from: https://getbootstrap.com/docs/4.0/components/navbar/-->
+          <button class="navbar-toggler navbar-light Marcelo-side-toggle-button" id="" type="button" data-toggle="collapse" data-target="#Page5" aria-controls="Marcelo-side-menu" aria-expanded="false" aria-label="Toggle navigation"> <!-- Navbar Toggle button "data-target" has to be the same name as side menu down to call and load. -->
+          <span class="navbar-toggler-icon"></span>
+          </button><!-- the class="Marcelo-side-toggle-button" is for calling css display:none; in large screens-->
+        <!-- Navbar Toggle button Ends -->
+
+        <div class="collapse-nav collapse Marcelo-side-menu" id="Page5"> <!-- class="Marcelo-side-menu" is nesseary for css display in large screens, id="Page1" is for the button to called an specific menu (cannot be a class)-->
+
+          <div class="sidebarmenuitem"><a href="index.html#Link-01">Under construction</a></div>
+          <hr>
+          <div class="sidebarmenuitem"><a href="index.html#Top">Top</a></div>
+        </div>
+       </div>
+
+      <div class="content">
+      <hr>
+        <div id="Link-01"><h2>Under construction</h2></div>
+        <br>
+      </div>
+    </div>
+  </div>
+</page-05>
+
+<page-06><!--Contact -->
+  <div class="Wrapper1">
+    <div class="grid1">
+      <div class="header" id="Contact"> <h1>Contact</h1></div>
+
+      <div class="sidebar">
+
+        <!-- Navbar Toggle button Start  from: https://getbootstrap.com/docs/4.0/components/navbar/-->
+          <button class="navbar-toggler navbar-light Marcelo-side-toggle-button" id="" type="button" data-toggle="collapse" data-target="#Page4" aria-controls="Marcelo-side-menu" aria-expanded="false" aria-label="Toggle navigation"> <!-- Navbar Toggle button "data-target" has to be the same name as side menu down to call and load. -->
+          <span class="navbar-toggler-icon"></span>
+          </button><!-- the class="Marcelo-side-toggle-button" is for calling css display:none; in large screens-->
+        <!-- Navbar Toggle button Ends -->
+
+        <div class="collapse-nav collapse Marcelo-side-menu" id="Page7"> <!-- class="Marcelo-side-menu" is nesseary for css display in large screens, id="Page1" is for the button to called an specific menu (cannot be a class)-->
+
+          <div class="sidebarmenuitem"><a href="index.html#Contacts">Contact</a></div>
+          <hr>
+          <div class="sidebarmenuitem"><a href="index.html#Top">Top</a></div>
+        </div>
+       </div>
+      <div class="content">
+        <div id="Contacts"><h2>Contact</h2>
+          <p></p>
+        </div>
+        <br>
+      </div>
+    </div>
+  </div>
+</page-06>
+
+
+<p id="page-top" style="bottom: 10px;"><a href="#Top">BACK TO TOP</a></p>
+
+</div>
+
+<footer>
+  <div class="container-fluid" id="footer_logo">
+    <a href="https://www.niigata-u.ac.jp/en/" target="_blank">
+      <!-- Navbar Brand image:  As always drama for nothing. remove u-logo... <img src="img/logo-english-footer-white.svg" alt="logo"> > -->
+    </a>
+    <p id="Copy-right">© Marcelo ROSALES 2018 JMRR</p>
+  </div>
+</footer>
+
+
+
+
+<!-- This scripts are nesseary for the dropdown-menu to work properly -->
+    <!-- JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+
+
+  </body>
+</html>
