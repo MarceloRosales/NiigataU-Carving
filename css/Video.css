@@ -1,0 +1,65 @@
+body {
+margin: 40px;
+}
+
+#spacer-Nav-Content {
+margin-top: 0px;
+background-color: #008555;
+height: 40px
+}
+
+.header{
+  /* To make the text center, approach2 -Flexbox Method- https://stackoverflow.com/questions/5703552/css-center-text-horizontally-and-vertically-inside-a-div-block?rq=1 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* To make the text center, approach2 -Flexbox Method- end*/
+  height: 100px;
+  margin: 40px;
+  text-align: center;
+  vertical-align: middle;
+  box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.4);
+  background-color: #008555; /* The Fallback */
+  background-color: rgba(#008555, 0.67); /*your original color*/
+  border-radius: 5px;/* makes div corners round, experiment with % too */
+  color: white;/* color of the text */
+}
+/* minmax() in auto-fill repeating tracks Start https://gridbyexample.com/examples/example28/*/
+
+.wrapper {
+   margin: 40px;
+   display: grid;
+   grid-gap: 20px;
+   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr) ) ; /* to change the size of the grid boxes */
+   background-color: #fff;
+   color: #444;
+}
+
+.box {
+   background-color: #e4e4e4;
+   color: #fff; /* Color of the text (but not anchors) */
+   border-radius: 5px;
+   padding: 20px;
+   font-size: 100%;
+   box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.4);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/*minmax() in auto-fill repeating tracks End https://gridbyexample.com/examples/example28/ */
+
+#footer_logo {
+height: 125px;
+background-color: #008555;
+padding-top: 25px;
+text-align: center;
+text-decoration: none;
+text-decoration-color: white;
+}
+
+#Copy-right{
+color: white;
+}
