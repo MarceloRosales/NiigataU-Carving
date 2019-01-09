@@ -20,7 +20,7 @@ height: 40px
   vertical-align: middle;
   box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.4);
   background-color: #008555; /* The Fallback */
-  background-color: rgba(#008555, 0.67); /*your original color*/
+  background-color: rgba(#008555, 0.67); /*your original color (transparency is not working, a way arroung is to have a fallback color)*/
   border-radius: 5px;/* makes div corners round, experiment with % too */
   color: white;/* color of the text */
 }
