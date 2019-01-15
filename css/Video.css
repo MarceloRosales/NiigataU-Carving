@@ -9,7 +9,7 @@ height: 40px
 }
 
 .header{
-  /* To make the text center, approach2 -Flexbox Method- https://stackoverflow.com/questions/5703552/css-center-text-horizontally-and-vertically-inside-a-div-block?rq=1 */
+  /* To make the text center, approach2 -Flexbox Method-　start https://stackoverflow.com/questions/5703552/css-center-text-horizontally-and-vertically-inside-a-div-block?rq=1 */
   display: flex;
   align-items: center;
   justify-content: center;
